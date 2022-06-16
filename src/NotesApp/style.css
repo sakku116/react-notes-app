@@ -1,0 +1,133 @@
+#main {
+    width: 100%;
+    max-width: 800px;
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card {
+    border-radius: 4px;
+    box-shadow: 0 0 2px black;
+}
+
+.searchField {
+    height: 30px;
+    width: 250px
+}
+
+h1 {
+    text-align: center;
+}
+
+#addNoteSection {
+    margin-top: 90px;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    text-align: center;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+#addNoteSection button {
+    height: 50px;
+}
+#addNoteSection form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 20px;
+    box-sizing: border-box;
+    gap: 10px;
+    position: relative;
+}
+#addNoteSection textarea {
+    padding: 10px;
+    resize: none;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+#addNoteSection .lettersNumberRemaining {
+    margin: 0;
+    margin-bottom: -5px;
+    margin-right: 5px;
+    align-self: flex-end;
+    opacity: .7
+}
+#addNoteSection .addTitleField {
+    height: 30px;
+}
+#addNoteSection .addBodyField {
+    height: 140px;
+    text-anchor: start;
+
+}
+
+#noteListSection {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+#archiveSection {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.noteListContainer {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    grid-auto-rows: minmax(290px, auto);
+}
+
+.noteItem {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.noteTitle {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: -7px;
+    overflow: hidden;
+}
+.noteDate {
+    font-size: 13px;
+}
+.noteBody {
+    padding: 7px;
+    box-sizing: border-box;
+    height: 150px;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.05);
+    border-radius: 5px;
+}
+.noteButtonContainer {
+    height: inherit;
+    display: flex;
+    justify-self: flex-end;
+    width: 100%;
+    gap: 5px;
+}
+.noteButtonContainer > * {
+    width: 100%;
+    height: 30px;
+}
+
+#archiveSection .noteItem {
+    opacity: .6;
+}
